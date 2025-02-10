@@ -1,17 +1,20 @@
-import { useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
+import  dotenv  from 'dotenv'
+dotenv.config()
 
 const useMovieData = () => {
     const [movies, setMovies] = useState([])
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
+    const apiKey = import.meta.env.API_KEY
 
     useEffect(() => {
-        const apiKey  = `4dda313898c1119068560316435bf1e2`
+        
         const apiUrl = `https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}`
 
-        fetch(apiUrl).then (res => {
+        fetch(apiUrl).then(res => {
             if (!res.ok) {
-                throw new Error ('Network response not ok')
+                throw new Error('Network response not ok')
             }
             return res.json()
         })
@@ -25,9 +28,9 @@ const useMovieData = () => {
                 setError(err)
                 setLoading(false)
             })
-        }, [])
+    }, [])
 
-        return {movies, loading, error}
-    }
+    return { movies, loading, error }
+}
 
-    export default useMovieData
+export default useMovieData
