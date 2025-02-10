@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sign_in {
+    font-size: 1em;
+    color: #fff;
+}
+
+.movie-box {
+    margin-left: 98px;
+}
