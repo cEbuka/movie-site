@@ -6,7 +6,7 @@ const useMovieData = () => {
     const [movies, setMovies] = useState([])
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
-    const apiKey = import.meta.env.API_KEY
+    const apiKey = process.env.API_KEY
 
     useEffect(() => {
         
