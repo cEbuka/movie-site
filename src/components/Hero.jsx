@@ -1,10 +1,13 @@
+import useMovieData from "../hooks/useMovieData"
 import "../styles/hero.css"
 import Header from "./Header"
 
 const Hero = () => {
+    const {backDropUrl} = useMovieData();
     return (
     <>
     <div className="hero-section">
+        <img className="hero-image" src={`https://image.tmdb.org/t/p/original${backDropUrl}`} alt="hero_image"/>
         <Header />
         <div className="hero-movie-container">
         <div className="hero-movie_name">
