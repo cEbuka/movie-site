@@ -1,33 +1,23 @@
 import { useState, useEffect } from 'react'
-import  dotenv  from 'dotenv'
-dotenv.config()
+import { getTrendingMovies } from '../styles/api/tmdb'
+
 
 const useMovieData = () => {
     const [movies, setMovies] = useState([])
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
-    const apiKey = process.env.API_KEY
 
     useEffect(() => {
-        
-        const apiUrl = `https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}`
 
-        fetch(apiUrl).then(res => {
-            if (!res.ok) {
-                throw new Error('Network response not ok')
-            }
-            return res.json()
+        getTrendingMovies().then((data) => {
+            console.log(data)
+            const fetchedMovies = data.results
+            setMovies(fetchedMovies)
+            setLoading(false)
+        }).catch((err) => {
+            setError(err)
+            setLoading(false)
         })
-            .then((data) => {
-                console.log(data)
-                const fetchedMovies = data.results
-                setMovies(fetchedMovies)
-                setLoading(false)
-            })
-            .catch((err) => {
-                setError(err)
-                setLoading(false)
-            })
     }, [])
 
     return { movies, loading, error }
