@@ -8,6 +8,7 @@ const Hero = () => {
     <>
     <div className="hero-section">
         <img className="hero-image" src={`https://image.tmdb.org/t/p/original${backDropUrl}`} alt="hero_image"/>
+        {console.log(backDropUrl)}
         <Header />
         <div className="hero-movie-container">
         <div className="hero-movie_name">
