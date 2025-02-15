@@ -1,26 +1,27 @@
 import useMovieData from "../hooks/useMovieData"
+import useTimeout from "../hooks/useTimeout";
 import "../styles/hero.css"
+
 import Header from "./Header"
 
 const Hero = () => {
-    const {backDropPath} = useMovieData();
+    const { backDropPath, movies } = useMovieData();
+    const { currentIndex } = useTimeout()
     return (
-    <>
-    <div className="hero-section">
-        <img className="hero-image" src={`${backDropPath}`} alt="hero_image"/>
-        <Header />
-        <div className="hero-movie-container">
-        <div className="hero-movie_name">
-        John Wick 3 : Parabellum
-        </div>
-        <div className="hero-movie_about">
-        John Wick is on the run after killing a member of the international assassins' guild, and 
-        with a $14 million price tag on his head, he is the target of hit men and women everywhere.
-        </div>
-        <div className="watch_trailer"></div>
-        </div>
-    </div>
-    </>
+        <>
+            <div className="hero-section" style={{ backgroundImage: `url(${backDropPath[currentIndex]})` }}>
+                <Header />
+                <div className="hero-movie-container">
+                    <div className="hero-movie_name">
+                        {movies[currentIndex]?.title}
+                    </div>
+                    <div className="hero-movie_about">
+                        {movies[currentIndex]?.overview}
+                    </div>
+                    <div className="watch_trailer"></div>
+                </div>
+            </div>
+        </>
     )
 }
 
