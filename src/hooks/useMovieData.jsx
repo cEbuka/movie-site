@@ -11,14 +11,29 @@ const useMovieData = () => {
 
 
     useEffect(() => {
+        const savedTrending = localStorage.getItem('trendingMovies');
+        const savedBackdropPath = localStorage.getItem('backDropPath');
+        if (savedTrending) {
+            setMovies(JSON.parse(savedTrending));
+
+        }
+        if (savedBackdropPath) {
+            setBackDropPath(JSON.parse(savedBackdropPath));
+        }
 
         getTrendingMovies().then((data) => {
             console.log(data)
             const fetchedMovies = data.results
-            setMovies(fetchedMovies)
+            if (fetchedMovies) {
+                setMovies(fetchedMovies)
+                localStorage.setItem('trendingMovies', JSON.stringify(fetchedMovies));
+            }
             setLoading(false)
             const backdrops = fetchedMovies.map(movies => movies.backdrop_path ? `${IMG_API}${movies.backdrop_path}` : null);
-            setBackDropPath(backdrops);
+            if (backdrops) {
+                setBackDropPath(backdrops);
+                localStorage.setItem('backDropPath', JSON.stringify(backdrops));
+            }
         }).catch((err) => {
             setError(err)
             setLoading(false)
