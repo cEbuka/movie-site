@@ -1,5 +1,4 @@
-{/*import SearchBar from "./SearchBar"*/}
-import mlogo from "../assets/logo.png"
+
 import menu_icon from "../assets/menu_icon.png"
 import "../styles/header.css"
 
@@ -8,20 +7,19 @@ const Header = () => {
         <>
             <header>
                 <div className="movie-box">
-                    <img 
-                    alt="movie_box"
-                    src={mlogo}
+                    <img
+                        alt="movie_box"
+                        src={"logo.png"}
                     />
                 </div>
-                {/*<div className="searchbar">
-                    <SearchBar />
-    </div>*/}
+                
+
                 <div className="menu-icon">
-                    <h1 className="sign_in">Sign in</h1>
-                    <img
-                    alt="menu_icon"
-                    src={menu_icon}
-                    />
+                    <h1 className="sign_in">Sign in <span><img
+                        alt="menu_icon"
+                        src={menu_icon}
+                    /></span></h1>
+
                 </div>
             </header>
         </>
