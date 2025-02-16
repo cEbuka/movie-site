@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom"
 import menu_icon from "../assets/menu_icon.png"
 import "../styles/header.css"
 
@@ -12,13 +13,13 @@ const Header = () => {
                         src={"logo.png"}
                     />
                 </div>
-                
+
 
                 <div className="menu-icon">
-                    <h1 className="sign_in">Sign in <span><img
+                    <Link to={`/signup`} className="sign_in">Sign in <span><img
                         alt="menu_icon"
                         src={menu_icon}
-                    /></span></h1>
+                    /></span></Link>
 
                 </div>
             </header>

@@ -3,16 +3,22 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ErrorPage from './components/ErrorBoundary.jsx';
 import Home from './routes/Home.jsx';
+import Movie from './routes/movie.jsx';
+import Signup from './routes/Signup.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement: <ErrorPage/>
+    errorElement: <ErrorPage />
   },
   {
     path: "movie/:movieId",
-    element: <Movie/>
+    element: <Movie />
+  },
+  {
+    path: "/signup",
+    element: <Signup />
   }
 ]);
 
