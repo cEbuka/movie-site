@@ -20,7 +20,7 @@ const Footer = () => {
     <h1>Privacy & Policy</h1>
     <h1>Press Room</h1>
     </div>
-    <span className='copyright'>© 2023 MovieTerminal by Simon Chukwuebuka</span>
+    <span className='copyright'>&copy;2023 MovieTerminal by Simon Chukwuebuka</span>
     </footer>
     </section>
     </>
