@@ -1,7 +1,8 @@
 
-import { Link } from "react-router-dom"
+import { Form, Link } from "react-router-dom"
 import menu_icon from "../assets/menu_icon.png"
 import "../styles/header.css"
+
 
 const Header = () => {
     return (
@@ -13,6 +14,15 @@ const Header = () => {
                         src={"logo.png"}
                     />
                 </div>
+
+                <Form method="post">
+                    <div>
+                        <input />
+                        <button>
+                          Sign in
+                        </button>
+                    </div>
+                </Form>
 
 
                 <div className="menu-icon">

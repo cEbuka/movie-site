@@ -6,11 +6,12 @@ import Home from './routes/Home.jsx';
 import Movie from './routes/movie.jsx';
 import Signup from './routes/Signup.jsx';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement: <ErrorPage />
+    errorElement: <ErrorPage />,
   },
   {
     path: "movie/:movieId",
