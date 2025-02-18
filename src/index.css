@@ -98,6 +98,10 @@ footer {
     align-items: center;
     flex-flow: column;
     gap: 36px;
+    position: relative;
+    bottom: 0;
+    background-color: red;
+    width: 100%;
 }
 
 .social {

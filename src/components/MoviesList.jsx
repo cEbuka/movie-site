@@ -6,8 +6,9 @@ const MoviesList = () => {
     const { movies } = useMovieData()
     return (
         <Fragment>
-            <Hero />
+
             <div className="movies-section">
+                <Hero />
                 <h1>Featured Movies</h1>
                 <div className="movie-card">
                     {movies?.map((movie) =>

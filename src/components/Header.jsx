@@ -8,12 +8,12 @@ const Header = () => {
     return (
         <>
             <header>
-                <div className="movie-box">
+                <Link to="/" className="movie-box">
                     <img
                         alt="movie_box"
                         src={"logo.png"}
                     />
-                </div>
+                </Link>
 
                 <Form method="post" className="search-form">
                     <div className="search-box">
