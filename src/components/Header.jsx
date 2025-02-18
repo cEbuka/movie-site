@@ -1,7 +1,7 @@
 
 import { Form, Link } from "react-router-dom"
 import menu_icon from "../assets/menu_icon.png"
-import "../styles/header.css"
+import MoviesList from "./MoviesList"
 
 
 const Header = () => {

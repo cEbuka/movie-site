@@ -1,15 +1,16 @@
 
-import Hero from "../components/Hero"
-import MoviesList from "../components/MoviesList"
 import Footer from "../components/Footer"
+import { Fragment } from "react"
+import { Outlet } from "react-router-dom"
+import Header from "../components/Header"
 
 const Home = () => {
     return (
-        <>
-            <Hero />
-            <MoviesList />
+        <Fragment>
+            <Header />
+            <Outlet />
             <Footer />
-        </>
+        </Fragment>
     )
 }
 

@@ -5,6 +5,8 @@ import ErrorPage from './components/ErrorBoundary.jsx';
 import Home from './routes/Home.jsx';
 import Movie from './routes/movie.jsx';
 import Signup from './routes/Signup.jsx';
+import "./index.css"
+import MoviesList from './components/MoviesList.jsx';
 
 
 const router = createBrowserRouter([
@@ -12,15 +14,19 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
     errorElement: <ErrorPage />,
+    children: [
+      
+      {
+        path: "/",
+        element: <MoviesList />
+      },
+      {
+        path: "/signup",
+        element: <Signup />
+      }
+    ]
   },
-  {
-    path: "movie/:movieId",
-    element: <Movie />
-  },
-  {
-    path: "/signup",
-    element: <Signup />
-  }
+
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

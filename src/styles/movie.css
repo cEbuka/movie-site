@@ -1,4 +1,6 @@
-
+.movie-section {
+    background-color: red;
+}
 
 .movie-card {
     display: grid;
