@@ -57,9 +57,8 @@ header {
 
 .movie-card {
     display: grid;
-    grid-gap: 80px;
+    gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
-    margin: 161px 98px ;
 }
 
 .movie-details {
@@ -86,7 +85,6 @@ footer {
     align-items: center;
     flex-flow: column;
     gap: 36px;
-    margin: 50px 0;
     background-color: red;
 }
 
