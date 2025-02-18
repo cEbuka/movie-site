@@ -22,6 +22,7 @@ header {
 
 .search-form {
     margin-inline: auto;
+    display: flex;
 }
 
 .search-box {
