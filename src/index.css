@@ -7,17 +7,29 @@
 
 /* Header Styles */
 header {
-    background-color: red;
-    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #111827;
 }
 
 .sign_in {
     font-size: 1em;
     color: #fff;
+    margin-left: auto;
+}
+
+.search-form {
+    margin-inline: auto;
+}
+
+.search-box {
+    background-color: red;
 }
 
 .movie-box {
-    margin-left: 98px;
+    margin-right: auto;
 }
 
 /* Hero Styles */
@@ -85,7 +97,6 @@ footer {
     align-items: center;
     flex-flow: column;
     gap: 36px;
-    background-color: red;
 }
 
 .social {

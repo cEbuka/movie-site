@@ -15,8 +15,8 @@ const Header = () => {
                     />
                 </div>
 
-                <Form method="post">
-                    <div>
+                <Form method="post" className="search-form">
+                    <div className="search-box">
                         <input />
                         <button>
                           Sign in
