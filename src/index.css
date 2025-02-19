@@ -1,123 +1,121 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* Header Styles */
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #111827;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #111827;
 }
 
 .sign_in {
-    font-size: 1em;
-    color: #fff;
-    margin-left: auto;
+  font-size: 1em;
+  color: #fff;
+  margin-left: auto;
 }
 
 .search-form {
-    margin-inline: auto;
-    display: flex;
+  margin-inline: auto;
+  display: flex;
 }
 
 .search-box {
-    background-color: red;
+  background-color: red;
 }
 
 .movie-box {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 /* Hero Styles */
 .hero-section {
-    max-width: 100%;
-    min-height: 500px;
-    background-repeat: no-repeat;
-    
-    background-size: cover;
-    background-color: red;
-    margin-bottom: 0;
+  max-width: 100%;
+  min-height: 500px;
+  background-repeat: no-repeat;
 
+  background-size: cover;
+  background-color: red;
+  margin-bottom: 0;
 }
 
 .hero-movie-container {
-    display: flex;
-    margin-left: 98px;
-    width: 25%;
-    flex-flow: column;
-    padding-block: 2rem;
+  display: flex;
+  margin-left: 98px;
+  width: 25%;
+  flex-flow: column;
+  padding-block: 2rem;
 }
 
 .hero-movie_name {
-    color: #fff;
-    font-size: 48px;
+  color: #fff;
+  font-size: 48px;
 }
 
 .hero-movie_about {
-    color: #fff;
-    font-size: 1.5em;
+  color: #fff;
+  font-size: 1.5em;
 }
 
 /* movies section */
-.movie-section {
-    background-color: red;
+
+.movie-list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
 }
 
 .movie-card {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(4, 1fr);
+  outline: 1px solid #111827;
+  background-color: hsl(20, 50%, 40%);
+  border-radius: 0.5rem;
+  padding: 1rem;
 }
 
 .movie-details {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
 }
 
 .movie-title {
-    color: #111827;
-    font-size: 18px;
-    font-family: 'DM Sans';
+  color: #111827;
+  font-size: 18px;
+  font-family: "DM Sans";
 }
 
 .movie-image {
-    width: 100%;
+  width: 100%;
 }
 
 /* footer styles */
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    gap: 36px;
-    position: relative;
-    bottom: 0;
-    background-color: red;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 36px;
 }
 
 .social {
-    display: flex;
-    gap: 48px;
-
+  display: flex;
+  gap: 48px;
 }
 
 .terms {
-    display: flex;
-    gap: 48px;
+  display: flex;
+  gap: 48px;
 }
 
 .copyright {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    color: #6B7280;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  color: #6b7280;
 }
