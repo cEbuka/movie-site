@@ -38,10 +38,14 @@ header {
   max-width: 100%;
   min-height: 500px;
   background-repeat: no-repeat;
-
   background-size: cover;
   background-color: red;
   margin-bottom: 0;
+
+  @media (min-width: 758px) {
+    min-height: 200px;
+    
+  }
 }
 
 .hero-movie-container {
@@ -66,14 +70,13 @@ header {
 
 .movie-list {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   grid-template-columns: repeat(4, minmax(200px, 1fr));
   padding-inline: 2rem;
 }
 
 .movie-card {
-  outline: 1px solid #111827;
-  background-color: hsl(100, 20%, 60%);
+  background-color: rgba(10, 10, 10, 0.2);
   border-radius: 0.5rem;
   padding: 1rem;
 }
