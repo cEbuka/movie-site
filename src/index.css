@@ -68,11 +68,12 @@ header {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(4, minmax(200px, 1fr));
+  padding-inline: 2rem;
 }
 
 .movie-card {
   outline: 1px solid #111827;
-  background-color: hsl(20, 50%, 40%);
+  background-color: hsl(100, 20%, 60%);
   border-radius: 0.5rem;
   padding: 1rem;
 }
@@ -92,6 +93,11 @@ header {
 
 .movie-image {
   width: 100%;
+  border-radius: 0.5rem;
+}
+
+.movie-overview {
+   color: #111827;
 }
 
 /* footer styles */
