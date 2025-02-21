@@ -6,22 +6,22 @@ import tw from '../assets/twitter.png'
 const Footer = () => {
   return (
     <>
-    <section className='footer-section'>
-    <footer>
-    <div className='social'>
-    <img src={fb}/>
-    <img src={insta}/>
-    <img src={yt}/>
-    <img src={tw}/>
-    </div>
-    <div className='terms'>
-    <h1>Conditions of Use</h1>
-    <h1>Privacy & Policy</h1>
-    <h1>Press Room</h1>
-    </div>
-    <span className='copyright'>&copy;2023 MovieTerminal by Simon Chukwuebuka</span>
-    </footer>
-    </section>
+      <section className='footer-section'>
+        <footer>
+          <div className='social'>
+            <img src={fb} />
+            <img src={insta} />
+            <img src={yt} />
+            <img src={tw} />
+          </div>
+          <ul className='terms'>
+            <li>Conditions of Use</li>
+            <li>Privacy & Policy</li>
+            <li>Press Room</li>
+          </ul>
+          <span className='copyright'>&copy;2023 MovieTerminal by Simon Chukwuebuka</span>
+        </footer>
+      </section>
     </>
   )
 }
