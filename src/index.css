@@ -13,7 +13,7 @@ body {
 header {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
   padding: 1rem 2rem;
   background-color: #111827;
   overflow: hidden;
@@ -25,9 +25,8 @@ header {
 }
 
 .search-box {
-  width: 80%;
   align-items: center;
-  
+
 }
 
 /* Hero Styles */
