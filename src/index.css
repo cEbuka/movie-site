@@ -6,13 +6,14 @@
 }
 
 body {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* Header Styles */
 header {
   width: 100%;
   display: flex;
+  justify-content: space-around;
   padding: 1rem 2rem;
   background-color: #111827;
   overflow: hidden;
@@ -23,16 +24,10 @@ header {
   color: #fff;
 }
 
-.search-form {
-  display: flex;
-}
-
 .search-box {
-  background-color: red;
-}
-
-.movie-box {
- 
+  width: 80%;
+  align-items: center;
+  
 }
 
 /* Hero Styles */
@@ -59,12 +54,6 @@ header {
   color: #fff;
   font-size: 1.5em;
 }
-
-.hero-movie_about, .hero-movie_name {
-  background-color: rgba(10, 5, 5, 0.1);
-  opacity: 0.9;
-}
-
 /* movies section */
 
 .movie-list {
@@ -74,7 +63,7 @@ header {
   padding-inline: 2rem;
 
   @media (max-width: 758px) {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 }
 
@@ -103,7 +92,7 @@ header {
 }
 
 .movie-overview {
-   color: #111827;
+  color: #111827;
 }
 
 /* footer styles */
