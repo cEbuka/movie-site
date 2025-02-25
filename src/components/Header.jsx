@@ -14,17 +14,12 @@ const Header = () => {
                         src={"logo.png"}
                     />
                 </Link>
-
-            
-                    <div className="search-box">
-                        <input />
-                        <button>
-                          Sign in
-                        </button>
-                    </div>
-               
-
-
+                <div className="search-box">
+                    <input />
+                    <button>
+                        Search
+                    </button>
+                </div>
                 <div className="menu-icon">
                     <Link to={`/signup`} className="sign_in">Sign in <span><img
                         alt="menu_icon"

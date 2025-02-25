@@ -21,7 +21,7 @@ header {
 }
 
 .search-box {
-  background-color: white;
+  border: 1px solid #fff;
 }
 
 .search-box input {
