@@ -20,6 +20,16 @@ header {
   color: #fff;
 }
 
+.search-box {
+  background-color: white;
+}
+
+.search-box input {
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+}
+
 /* Hero Styles */
 .hero-section {
   min-height: 500px;
