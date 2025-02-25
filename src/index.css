@@ -30,6 +30,14 @@ header {
   border: none;
 }
 
+.search-box button {
+  background-color: grey;
+  color: #fff;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
 /* Hero Styles */
 .hero-section {
   min-height: 500px;
