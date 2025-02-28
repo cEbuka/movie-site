@@ -45,6 +45,11 @@ header {
   border: none;
   cursor: pointer;
 }
+.menu sign_in{
+  text-decoration: none;
+  display: flex;
+  gap: 2rem;
+}
 
 /* Hero Styles */
 .hero-section {
