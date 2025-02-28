@@ -16,6 +16,7 @@ header {
 }
 
 .sign_in {
+  display: flex;
   font-size: 1em;
   color: #fff;
 }
