@@ -48,7 +48,7 @@ header {
 .menu sign_in{
   text-decoration: none;
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 /* Hero Styles */
