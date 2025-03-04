@@ -1,6 +1,6 @@
 
 import { Form, Link } from "react-router-dom"
-import FaMenu from "react-icons/fa"
+import {faMenu} from "react-icons/fa"
 
 
 const Header = () => {
@@ -14,18 +14,18 @@ const Header = () => {
                     />
                 </Link>
                 <div className="search-box">
-                    <Form method="post">
+                    <form method="post">
                         <input />
-                        <button>
+                        <button type="submit">
                             Search
                         </button>
-                    </Form>
+                    </form>
 
                 </div>
                 <div className="menu-icon">
                     <Link to={`/signup`} className="sign_in">Sign in
                     </Link>
-                    <FaMenu />
+                    <faMenu />
                 </div>
             </header>
         </>
