@@ -46,6 +46,14 @@ header {
   border: none;
   cursor: pointer;
 }
+
+.search-box button:active {
+  background-color: #111827;
+}
+
+.search-box button:focus {
+  background-color: hsl(0, 0, 50%);
+}
 .menu sign_in{
   text-decoration: none;
   display: flex;

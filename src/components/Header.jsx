@@ -14,10 +14,13 @@ const Header = () => {
                     />
                 </Link>
                 <div className="search-box">
-                    <input />
-                    <button>
-                        Search
-                    </button>
+                    <Form method="post">
+                        <input />
+                        <button>
+                            Search
+                        </button>
+                    </Form>
+
                 </div>
                 <div className="menu-icon">
                     <Link to={`/signup`} className="sign_in">Sign in
