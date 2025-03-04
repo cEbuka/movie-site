@@ -1,7 +1,6 @@
 
 import { Form, Link } from "react-router-dom"
-import menu_icon from "../assets/menu_icon.png"
-import MoviesList from "./MoviesList"
+import FaMenu from "react-icons/fa"
 
 
 const Header = () => {
@@ -21,11 +20,9 @@ const Header = () => {
                     </button>
                 </div>
                 <div className="menu-icon">
-                    <Link to={`/signup`} className="sign_in">Sign in <span><img
-                        alt="menu_icon"
-                        src={menu_icon}
-                    /></span></Link>
-
+                    <Link to={`/signup`} className="sign_in">Sign in
+                    </Link>
+                    <FaMenu />
                 </div>
             </header>
         </>

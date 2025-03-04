@@ -19,6 +19,7 @@ header {
   display: flex;
   font-size: 1em;
   color: #fff;
+  text-decoration: none;
 }
 
 .search-box {
