@@ -15,6 +15,11 @@ header {
   background-color: #111827;
 }
 
+.site-logo {
+  text-decoration: none;
+  color: #fff;
+}
+
 .sign_in {
   display: flex;
   font-size: 1em;
@@ -43,6 +48,7 @@ header {
 }
 
 .search-form button {
+  padding-inline: 1rem;
   background-color: #111827;
   color: #fff;
   border: none;
@@ -53,11 +59,7 @@ header {
   background-color: #111827;
 }
 
-.search-form button:focus {
-  background-color: hsl(0, 0, 50%);
-}
-.menu sign_in {
-  text-decoration: none;
+.sign-in {
   display: flex;
   gap: 1.5rem;
 }

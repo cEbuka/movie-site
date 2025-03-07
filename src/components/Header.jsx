@@ -7,11 +7,8 @@ const Header = () => {
     return (
         <>
             <header>
-                <Link to="/" className="movie-box">
-                    <img
-                        alt="movie_box"
-                        src={"logo.png"}
-                    />
+                <Link to="/" className="site-logo">
+                 <h1>MovieTerminal</h1>
                 </Link>
 
                 <Form method="post" className="search-form">
@@ -21,7 +18,7 @@ const Header = () => {
                     </button>
                 </Form>
 
-                <div className="menu-icon">
+                <div className="sign-in">
                     <Link to={`/signup`} className="sign_in">Sign in
                     </Link>
                     <FaFacebook />
