@@ -10,7 +10,7 @@ const Header = () => {
                 <Link to="/" className="site-logo">
                     <h1>MovieTerminal</h1>
                 </Link>
-
+                {/* todo: Implement search feature using react router */}
                 <Form method="post" className="search-form">
                     <input type="text" placeholder="Search movies" name="search" />
                     <button type="submit">
