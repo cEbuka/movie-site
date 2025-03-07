@@ -9,7 +9,7 @@
 header {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background-color: #111827;
@@ -22,36 +22,39 @@ header {
   text-decoration: none;
 }
 
-.search-box {
+.search-form {
   border: 1px solid #fff;
-  width: 30%;
+  width: 33%;
   display: flex;
 }
 
-.search-box input {
+.search-form input {
   width: 100%;
-  padding: 0.5rem;
   outline: none;
   border: none;
+  background-color: #303030;
+  color: #b5b5b5;
 }
 
-.search-box input:active {
-  background-color: #6b7280;
+.search-form:hover {
+  outline: 1px solid #6b7280;
 }
 
-.search-box button {
-  background-color: #465788;
+.search-form button {
+  
+  background-color: #111827;
   color: #fff;
   padding: 0.5rem;
   border: none;
   cursor: pointer;
+
 }
 
-.search-box button:active {
+.search-form button:active {
   background-color: #111827;
 }
 
-.search-box button:focus {
+.search-form button:focus {
   background-color: hsl(0, 0, 50%);
 }
 .menu sign_in{

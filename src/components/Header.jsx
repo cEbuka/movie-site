@@ -13,20 +13,18 @@ const Header = () => {
                         src={"logo.png"}
                     />
                 </Link>
-                <div className="search-box">
-                    <form method="post">
-                        <input />
-                        <button type="submit">
-                            Search
-                        </button>
-                    </form>
-                   
 
-                </div>
+                <Form method="post" className="search-form">
+                    <input type="text" placeholder="Search movies" name="search" />
+                    <button type="submit">
+                        Search
+                    </button>
+                </Form>
+
                 <div className="menu-icon">
                     <Link to={`/signup`} className="sign_in">Sign in
                     </Link>
-                    <FaFacebook/>
+                    <FaFacebook />
                 </div>
             </header>
         </>
