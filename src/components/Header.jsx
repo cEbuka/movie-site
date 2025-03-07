@@ -1,6 +1,6 @@
 
 import { Form, Link } from "react-router-dom"
-import { FaFacebook } from "react-icons/fa"
+import { FaBars } from "react-icons/fa"
 
 
 const Header = () => {
@@ -8,7 +8,7 @@ const Header = () => {
         <>
             <header>
                 <Link to="/" className="site-logo">
-                 <h1>MovieTerminal</h1>
+                    <h1>MovieTerminal</h1>
                 </Link>
 
                 <Form method="post" className="search-form">
@@ -21,7 +21,7 @@ const Header = () => {
                 <div className="sign-in">
                     <Link to={`/signup`} className="sign_in">Sign in
                     </Link>
-                    <FaFacebook />
+                    <button><FaBars /></button>
                 </div>
             </header>
         </>

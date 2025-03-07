@@ -20,13 +20,6 @@ header {
   color: #fff;
 }
 
-.sign_in {
-  display: flex;
-  font-size: 1em;
-  color: #fff;
-  text-decoration: none;
-}
-
 .search-form {
   outline: 1px solid #616161;
   width: 33%;
@@ -61,7 +54,21 @@ header {
 
 .sign-in {
   display: flex;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+.sign_in {
+  display: flex;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.sign-in button {
+  all: unset;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 /* Hero Styles */
