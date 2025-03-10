@@ -1,3 +1,4 @@
+import { FaPlay } from "react-icons/fa"
 import useMovieData from "../hooks/useMovieData"
 import Hero from "./Hero"
 import { Fragment } from "react"
@@ -15,6 +16,9 @@ const MoviesList = () => {
                         <div className="movie-details">
                             <span className="movie-title">{movie.title}</span>
                             <span className="movie-overview">{movie.overview}</span>
+                        </div>
+                        <div className="movie-control">
+                            <button><FaPlay /></button>
                         </div>
                     </div>)}
             </div>

@@ -112,6 +112,7 @@ header {
   background-color: rgba(10, 10, 10, 0.2);
   border-radius: 0.5rem;
   padding: 1rem;
+  position: relative;
 }
 
 .movie-details {
@@ -134,6 +135,20 @@ header {
 
 .movie-overview {
   color: #111827;
+}
+
+.movie-control {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.movie-control > * {
+  all: unset;
+  color: #303030;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 /* footer styles */
