@@ -20,10 +20,16 @@ app.get("/movie/week", async (req, res) => {
             `https://api.themoviedb.org/3/trending/movie/week?api_key=${api_key}`
         );
         res.json(response.data);
+
     } catch (error) {
         res.status(500).json({ error: error.toString() });
     }
+    console.log(req.query)
 });
+
+
+
+
 
 //start the server
 app.listen(PORT, () => {
