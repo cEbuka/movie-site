@@ -167,6 +167,10 @@ footer {
   gap: 4rem;
 }
 
+ul li {
+  list-style: none;
+}
+
 .terms {
   display: flex;
   gap: 4rem;

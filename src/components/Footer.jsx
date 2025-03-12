@@ -8,12 +8,12 @@ const Footer = () => {
     <>
       <section className='footer-section'>
         <footer>
-          <div className='social'>
-            <img src={fb} />
-            <img src={insta} />
-            <img src={yt} />
-            <img src={tw} />
-          </div>
+          <ul className='social'>
+            <li><img src={fb} /></li>
+            <li><img src={insta} /></li>
+            <li><img src={yt} /></li>
+            <li><img src={tw} /></li>
+          </ul>
           <ul className='terms'>
             <li>Conditions of Use</li>
             <li>Privacy & Policy</li>
