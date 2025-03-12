@@ -9,10 +9,10 @@ const Footer = () => {
       <section className='footer-section'>
         <footer>
           <ul className='social'>
-            <li><img src={fb} /></li>
-            <li><img src={insta} /></li>
-            <li><img src={yt} /></li>
-            <li><img src={tw} /></li>
+            <li><a href='#'><img src={fb} /></a></li>
+            <li><a href='#'><img src={insta} /></a></li>
+            <li><a href='#'><img src={yt} /></a></li>
+            <li><a href='#'><img src={tw} /></a></li>
           </ul>
           <ul className='terms'>
             <li>Conditions of Use</li>
