@@ -3,15 +3,11 @@ import { Form } from "react-router-dom"
 
 
 const SearchBar = () => {
-    const [query, setQuery] = useState()
-    const handleChange = (value) => {
-        searchQuery(value)
-        setQuery(value)
-    }
+    const [search, setSearch] = useState('')
     return (
         <Fragment>
-            <Form className="search-form">
-                <input type="text" placeholder="Search movies" name="search" defaultValue={query} onChange={(e) => handleChange(e.target.value)} />
+            <Form method="get" className="search-form">
+                <input type="text" placeholder="Search movies" name="search" defaultValue={search} onChange={(e) => setSearch(e.target.value)} />
                 <button type="submit">
                     Search
                 </button>

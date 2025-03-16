@@ -27,15 +27,20 @@ app.get("/movie/week", async (req, res) => {
     }
 });
 
-app.get("/?search", async (req, res) => {
-    try {
-        const response = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=5dcf7f28a88be0edc01bbbde06f024ab&language=en-US&query=${req.params}&page=1&include_adult=false`);
-        res.json(response.data);
-        console.log(req.params);
-    }
-    catch (error) {
-        res.status(500).json({ error: error.toString() });
-    }
+app.get("/movie/search", async (req, res) => {
+    const options = {
+        method: 'GET',
+        url: `https://api.themoviedb.org/3/search/movie?query${req.query.search}=&include_adult=false&language=en-US&page=1`,
+        headers: {
+            accept: 'application/json',
+            Authorization: `Bearer ${api_key}`
+        }
+    };
+
+    axios
+        .request(options)
+        .then(response => res.json(response.data))
+        .catch(err => console.error(err));
 })
 
 

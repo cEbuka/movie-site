@@ -3,8 +3,10 @@ import useMovieData from "../hooks/useMovieData"
 import Hero from "./Hero"
 import { Fragment } from "react"
 
+
 const MoviesList = () => {
     const { movies } = useMovieData()
+    
     return (
         <Fragment>
             <Hero />

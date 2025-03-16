@@ -9,3 +9,13 @@ export async function getTrendingMovies() {
         return error;
     }
 }
+
+export async function getSearchedMovies() {
+    try { 
+        const response = await axios.get(`${API_BASE_URL}/movie/search`);
+        return response.data;
+    }
+    catch (err) {
+        return { "error": err }
+    }
+}
