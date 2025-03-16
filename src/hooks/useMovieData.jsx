@@ -22,7 +22,6 @@ const useMovieData = () => {
         }
 
         getTrendingMovies().then((data) => {
-            console.log(data)
             const fetchedMovies = data.results
             if (fetchedMovies) {
                 setMovies(fetchedMovies)

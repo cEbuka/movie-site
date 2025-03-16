@@ -1,26 +1,17 @@
 
-import { Form, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { FaBars } from "react-icons/fa"
-import { useState } from "react"
+import SearchBar from "./SearchBar";
 
 
 const Header = () => {
-    const [searchQuery, setSearchQuery] = useState("")
     return (
         <>
             <header>
                 <Link to="/" className="site-logo">
                     <h1>MovieTerminal</h1>
                 </Link>
-                {/* todo: Implement search feature using react router */}
-                <Form method="get" className="search-form">
-                    <input type="text" placeholder="Search movies" name="search" value={searchQuery} onChange={e => {
-                        setSearchQuery(e.target.value);
-                    }} />
-                    <button type="submit">
-                        Search
-                    </button>
-                </Form>
+                <SearchBar />
 
                 <div className="sign-in">
                     <Link to={`/signup`} className="sign_in">
@@ -28,6 +19,7 @@ const Header = () => {
                     </Link>
                     <button><FaBars /></button>
                 </div>
+
             </header>
         </>
     )
