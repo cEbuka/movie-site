@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { getTrendingMovies } from '../styles/api/tmdb'
+import { getTrendingMovies } from '../api/tmdb';
 const IMG_API = 'https://image.tmdb.org/t/p/w1280';
 
 

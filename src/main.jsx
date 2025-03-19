@@ -7,6 +7,7 @@ import Movie from './routes/movie.jsx';
 import Signup from './routes/Signup.jsx';
 import "./index.css"
 import MoviesList from './components/MoviesList.jsx';
+import { loader as rootLoader } from './components/MoviesList.jsx';
 
 
 const router = createBrowserRouter([
@@ -14,8 +15,9 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
     errorElement: <ErrorPage />,
+    loader: rootLoader,
     children: [
-      
+
       {
         path: "/",
         element: <MoviesList />

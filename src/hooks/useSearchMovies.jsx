@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { getSearchedMovies } from "../styles/api/tmdb";
+import { getSearchedMovies } from "../api/tmdb";
 
 
 const useSearchMovies = () => {
