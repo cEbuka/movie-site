@@ -1,7 +1,7 @@
 
 import dotenv from "dotenv"
 dotenv.config()
-import express from "express";
+import express, { json } from "express";
 import cors from "cors";
 import axios from "axios";
 
@@ -27,21 +27,32 @@ app.get("/movie/week", async (req, res) => {
     }
 });
 
-app.get("/movie/search", async (req, res) => {
+app.get("/search", async (req, res) => {
+    const query = req.query;
+    if (!query) {
+        res.status(400).json({ error: "Search query required" });
+    }
+
+
     const options = {
         method: 'GET',
-        url: `https://api.themoviedb.org/3/search/movie?query${req.query.search}=&include_adult=false&language=en-US&page=1`,
+        url: `https://api.themoviedb.org/3/search/movie?query=${query}&include_adult=false&language=en-US&page=1`,
         headers: {
             accept: 'application/json',
-            Authorization: `Bearer ${api_key}`
+            Authorization: `Bearer ${api_key}` // Bearer token for authentication   `
         }
     };
 
     axios
         .request(options)
-        .then(response => res.json(response.data))
-        .catch(err => console.error(err));
-})
+        .then(res => {
+            console.log(res.data);
+            res.json(res.data);
+        })
+        .catch(err => res.status(500).json({ error: err.toString()}));
+
+}
+)
 
 
 //start the server
