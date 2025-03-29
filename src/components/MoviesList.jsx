@@ -1,20 +1,13 @@
 import { FaPlay } from "react-icons/fa"
-import getMovieData from "../hooks/useMovieData"
 import Hero from "./Hero"
 import { Fragment } from "react"
-import { useLoaderData } from "react-router-dom";
+import useMovies from "../hooks/useMovies"
 
-
-export function loader() {
-    const movies = getMovieData();
-    return {movies}
-    
-}
 
 
 
 const MoviesList = () => {
-    const { movies } = useLoaderData()
+    const { movies } = useMovies()
     
     return (
         <Fragment>

@@ -1,9 +1,10 @@
-import useMovieData from "../hooks/useMovieData"
+
+import useMovies from "../hooks/useMovies";
 import useTimeout from "../hooks/useTimeout";
 
 
 const Hero = () => {
-    const { backDropPath, movies } = useMovieData();
+    const { backDropPath, movies } = useMovies();
     const { currentIndex } = useTimeout()
     return (
         <>

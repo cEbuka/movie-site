@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ErrorPage from './components/ErrorBoundary.jsx';
 import Home from './routes/Home.jsx';
-import Movie from './routes/movie.jsx';
 import Signup from './routes/Signup.jsx';
 import "./index.css"
 import MoviesList from './components/MoviesList.jsx';
-import { loader as rootLoader } from './components/MoviesList.jsx';
+import SearchResults from './components/SearchResults.jsx';
 
 
 const router = createBrowserRouter([
@@ -15,7 +14,6 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
     errorElement: <ErrorPage />,
-    loader: rootLoader,
     children: [
 
       {
@@ -25,6 +23,11 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <Signup />
+      }
+      ,
+      {
+        path: "/search",
+        element: <SearchResults/>
       }
     ]
   },

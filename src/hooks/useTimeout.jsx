@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import useMovieData from "./useMovieData"
+import useMovieData from "./useMovies"
 
 
 const useTimeout = () => {

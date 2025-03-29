@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { getTrendingMovies } from '../api/tmdb';
 const IMG_API = 'https://image.tmdb.org/t/p/w1280';
 
 
-const useMovieData = () => {
+const useMovies = () => {
     const [movies, setMovies] = useState([])
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
@@ -37,8 +37,10 @@ const useMovieData = () => {
             setError(err)
             setLoading(false)
         })
+
     }, [])
+
     return { movies, loading, error, backDropPath }
 }
 
-export default useMovieData
+export default useMovies;

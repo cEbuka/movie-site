@@ -1,12 +1,21 @@
 import { Fragment, useState } from "react"
-import { Form } from "react-router-dom"
+import { Form, useNavigate } from "react-router-dom"
 
 
 const SearchBar = () => {
     const [search, setSearch] = useState('')
+    const navigate = useNavigate();
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        if (search.trim()) {
+            navigate(`/?search=${encodeURIComponent(search)}`);
+        }
+
+    }
     return (
         <Fragment>
-            <Form method="get" className="search-form">
+            <Form className="search-form" onSubmit={handleSubmit}>
                 <input type="text" placeholder="Search movies" name="search" defaultValue={search} onChange={(e) => setSearch(e.target.value)} />
                 <button type="submit">
                     Search
