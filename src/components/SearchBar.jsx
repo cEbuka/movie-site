@@ -9,7 +9,7 @@ const SearchBar = () => {
     function handleSubmit(e) {
         e.preventDefault();
         if (search.trim()) {
-            navigate(`/?search=${encodeURIComponent(search)}`);
+            navigate(`/results?search=${encodeURIComponent(search)}`);
         }
 
     }

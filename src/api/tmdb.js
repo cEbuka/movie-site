@@ -11,8 +11,9 @@ export async function getTrendingMovies() {
 }
 
 export async function getSearchedMovies() {
+    
     try { 
-        const response = await axios.get(`${API_BASE_URL}/movie/search`);
+        const response = await axios.get(`${API_BASE_URL}/search`);
         return response.data;
     }
     catch (err) {

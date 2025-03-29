@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react"
 import { getSearchedMovies } from "../api/tmdb";
+import { useLocation } from "react-router-dom";
 
 
 const useSearchMovies = () => {
     const [results, setResults] = useState();
-
+    // const location = useLocation();
+    // const searchParams = new URLSearchParams(location.search);
+    // const query = searchParams.get("search")
 
     useEffect(() => {
 
@@ -20,6 +23,4 @@ const useSearchMovies = () => {
     return { results }
 }
 
-getSearchedMovies()
-
-export default useSearchMovies
+export default useSearchMovies;
